@@ -1,0 +1,20 @@
+<h2>Population List</h2>
+    <h3>{{errorMsg}}</h3>
+   
+    <table>
+        <thead>
+            <tr>
+                <th>Year</th>
+                <th>Total</th>
+                <th>Male</th>
+                <th>Female</th>
+            </tr>
+           </thead>
+
+      <tr *ngFor="let Population of population_result">
+        <td>{{Population.year}}</td>
+        <td>{{Population.total}}</td>
+        <td>{{Population.male}}</td>
+        <td>{{Population.female}}</td>
+      </tr>
+    </table>
